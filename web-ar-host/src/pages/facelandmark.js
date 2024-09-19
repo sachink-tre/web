@@ -15,17 +15,19 @@ function FaceLandmark() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    // eslint-disable-next-line no-use-before-define
-    createFaceLandmarker()
-    video = document.getElementById('webcam')
-    canvasElement = document.getElementById('output_canvas')
-    canvasCtx = canvasElement.getContext('2d')
 
-    drawingUtils = new DrawingUtils(canvasCtx)
-
-    setIsVisible(true)
-    // eslint-disable-next-line no-use-before-define
-    setTimeout(initWebCam, 4000)
+    (async ()=>{
+        await createFaceLandmarker()
+        setTimeout(initWebCam, 4000)
+    })()
+        // eslint-disable-next-line no-use-before-define
+        video = document.getElementById('webcam')
+        canvasElement = document.getElementById('output_canvas')
+        canvasCtx = canvasElement.getContext('2d')
+        drawingUtils = new DrawingUtils(canvasCtx)
+        
+        // setIsVisible(true)
+        // eslint-disable-next-line no-use-before-define
 
     return () => {
       console.log('unmount happend')
@@ -75,7 +77,7 @@ function FaceLandmark() {
       setTimeout(enableCam, 3000)
       return
     }
-    setIsVisible(false)
+    setIsVisible(true)
     // if (webcamRunning === true) {
     //   webcamRunning = false
     //   //   enableWebcamButton.innerText = 'ENABLE PREDICTIONS'
@@ -193,16 +195,16 @@ function FaceLandmark() {
   }
   return (
     <React.Fragment>
-      <div id='liveView' className='videoViewFacelandmark'>
-        <div style={{position: 'relative'}}>
-          <video id='webcam' className='videoInsert' muted autoPlay playsInline ></video>
-          <canvas
-          className='output_canvas'
-          id='output_canvas'
-          style={{position: 'absolute', left: 0, top: 0}}
-        />
-        </div>
-      </div>
+              <div id='liveView' className='videoViewFacelandmark'>
+                  <div style={{ position: 'relative' }}>
+                      <video id='webcam' className='videoInsert' muted autoPlay playsInline ></video>
+                      <canvas
+                          className='output_canvas'
+                          id='output_canvas'
+                          style={{ position: 'absolute', left: 0, top: 0 }}
+                      />
+                  </div>
+              </div>
     </React.Fragment>
   )
 }

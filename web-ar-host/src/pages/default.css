@@ -1,0 +1,8 @@
+.default {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    font-family: Arial;
+    color: white;
+    justify-content : center;
+  }

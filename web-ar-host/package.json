@@ -1,6 +1,7 @@
 {
   "name": "web-ar-host",
   "version": "0.1.0",
+  "homepage": "https://sachink-tre.github.io/web/#",
   "private": true,
   "dependencies": {
     "@mediapipe/tasks-genai": "^0.10.15",
