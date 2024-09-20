@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+
+  position: absolute;
+  /* text-align: center; */
+  margin: auto;
+  left: 50%;
+  top: 50%;
+}

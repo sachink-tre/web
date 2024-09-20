@@ -46,14 +46,14 @@ function CurrencyConverter() {
   // const modelUrl = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/pic.jpeg?sp=r&st=2024-09-19T05:55:32Z&se=2024-11-01T13:55:32Z&spr=https&sv=2022-11-02&sr=b&sig=LRVsoG%2FWIDzNhKQ8jMs4pG6GDhMUYOILtGJ0cnkf6s0%3D'
 
   useEffect(()=>{
-    loadModel(modelUrl1)
+    // loadModel(modelUrl1)
     loadModel(modelUrl2)
-    loadModel(modelUrl3)
-    loadModel(modelUrl4)
-    loadModel(modelUrl5)
-    loadModel(modelUrl6)
-    loadModel(modelUrl7)
-    loadModel(modelUrl20)
+    // loadModel(modelUrl3)
+    // loadModel(modelUrl4)
+    // loadModel(modelUrl5)
+    // loadModel(modelUrl6)
+    // loadModel(modelUrl7)
+    // loadModel(modelUrl20)
   },[])
 
    function loadModel(file) {
