@@ -68,7 +68,7 @@ function TwoMb() {
   
   return (
     <div ref={refContainer}>
-        <button type="button" onClick={() => navigate('/')}>Currency</button>
+        <button type="button" onClick={() => navigate('/')}>Home</button>
         {showLoader ? <h1>Loading..</h1> : null}
     </div>
 
