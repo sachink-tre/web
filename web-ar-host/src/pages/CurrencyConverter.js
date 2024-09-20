@@ -13,7 +13,7 @@ function CurrencyConverter() {
   const navigate = useNavigate();
 
   //20mb glb
-  // const modelUrl = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/AntiqueCamera.glb?sp=r&st=2024-09-10T10:45:34Z&se=2024-12-31T18:45:34Z&spr=https&sv=2022-11-02&sr=b&sig=5m9z%2F17qg4BSeAmOV1pZiqDg%2F0sKN3aSoCXxIjz3HjE%3D'
+  const modelUrl20 = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/AntiqueCamera.glb?sp=r&st=2024-09-10T10:45:34Z&se=2024-12-31T18:45:34Z&spr=https&sv=2022-11-02&sr=b&sig=5m9z%2F17qg4BSeAmOV1pZiqDg%2F0sKN3aSoCXxIjz3HjE%3D'
   
   // 300 kb glb
   // const modelUrl = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/CatEyeGlasses.glb?sp=r&st=2024-09-19T07:10:19Z&se=2024-09-19T15:10:19Z&spr=https&sv=2022-11-02&sr=b&sig=shx4VCiQEog0f6KyBvw%2Beb07gHJ9lHowrlKiwTvpirw%3D'
@@ -39,6 +39,9 @@ function CurrencyConverter() {
   // bottle glb 8.5 Mb
   const modelUrl6 = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/bottle.glb?sp=r&st=2024-09-20T04:33:12Z&se=2025-01-01T12:33:12Z&spr=https&sv=2022-11-02&sr=b&sig=G6nMuxp3Cs2KTmhD5HQ77q7CcmPDnKkVkTXhvQtI%2FTQ%3D'
   
+  // 3d model 10mb
+  const modelUrl7 = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/10_mb.glb?sp=r&st=2024-09-20T05:22:50Z&se=2025-01-01T13:22:50Z&spr=https&sv=2022-11-02&sr=b&sig=QDleV8FhbbRo2SrhkJTp4B3ogNbfV%2FT40k6OeN8WmuU%3D' 
+  
   // image 89Kb
   // const modelUrl = 'https://storageinstaxcommondev.blob.core.windows.net/instax-test-container/pic.jpeg?sp=r&st=2024-09-19T05:55:32Z&se=2024-11-01T13:55:32Z&spr=https&sv=2022-11-02&sr=b&sig=LRVsoG%2FWIDzNhKQ8jMs4pG6GDhMUYOILtGJ0cnkf6s0%3D'
 
@@ -49,6 +52,8 @@ function CurrencyConverter() {
     loadModel(modelUrl4)
     loadModel(modelUrl5)
     loadModel(modelUrl6)
+    loadModel(modelUrl7)
+    loadModel(modelUrl20)
   },[])
 
    function loadModel(file) {
