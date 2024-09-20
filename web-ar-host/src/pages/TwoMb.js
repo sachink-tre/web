@@ -27,9 +27,9 @@ function TwoMb() {
        const model =  await loadModel(modelUrl2)
        setShowLoader(false)
        //mode 4
-       model.rotation.set(-10,0,0)
+       model.rotation.set(0,0,0)
        model.position.set(0,0,0)
-       model.scale.set(1,1,1)
+       model.scale.set(0.009,0.009,0.001)
 
        //model 2
     //    model.rotation.set(0,45,0)
